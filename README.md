@@ -11,6 +11,9 @@
 <a href="https://wfxr.mit-license.org/2017">
         <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"/>
 </a>
+<a href="https://mybinder.org/v2/gh/TomHodson/ReCoDE_MCMCFF/HEAD">
+        <img src="https://mybinder.org/badge_logo.svg"/>
+</a>
 </p>
 
 This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCode Project at Imperial College London. 
@@ -19,21 +22,36 @@ This is an exemplar project designed to showcase best practices in developing sc
 
 Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific softare projects. Maybe you are a PhD student just starting or a researcher just about to embark on a larger scale softare project there should be something intersting here for you.
 
+## Table of contents
+1. [A short introduction][intro] 
+1. [Organising code and python packaging][packaging]
+1. [Testing your code][testing]
+1. Python development environnments: Pip, Conda, setup.py and all that. 
+1. Planning out a larger software project
+1. Using Jupyter Notebooks during development
+1. Documentation
+1. Software Reproducability
+1. Citing software in a publication: CITATION.cff
+
 ## How to use this repo
 
 Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./learning`
 
-## Table of contents
-1. [A short introduction][intro]
-2. The problem
-3. A quick and dirty solution
-4. Planning out a larger software project
-5. Python development environnments: Pip, Conda, setup.py and all that.
-6. Test driven development: it's fun.
-7. Using Jupyter Notebooks during development
-8. Documentation
-9. Software Reproducability
-10. Citing software in a publication: CITATION.cff
+When you're ready to dive in you have three options:
+### 1. Launch them in Binder (easiest but a bit slow)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/TomHodson/ReCoDE_MCMCFF/HEAD?labpath=learning%2F01%20Introduction.ipynb)
+
+### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python installed)
+
+```
+git clone 
+cd 
+pip install -r requirements.txt
+jupyter lab
+```
+
+### 3. View them non-interactively with the links in the table of contents
+
 
 ## The map
 ``` bash
@@ -49,11 +67,15 @@ Take a look at a the table of contents below and see if there are any topics tha
 │   │   └── MCFF # The actual code lives in here!
 │   └── tests # automated tests for the code
 └── learning # Supporting documentation
-    └── Untitled.ipynb
 ```
 
+## External Resources
+- [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here. 
+- [Intermediate Research Software Development in Python](https://carpentries-incubator.github.io/python-intermediate-development/index.html)
 
 
 
-[TDD]: http://placeholder_link.com/
-[intro]: http://placeholder_link.com/
+[TDD]: learning/01%20Introduction.ipynb
+[intro]: learning/01%20Introduction.ipynb
+[packaging]: learning/02%20Packaging%20it%20up.ipynb
+[testing]: learning/02%20Testing.ipynb
