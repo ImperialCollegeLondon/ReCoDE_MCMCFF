@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Markov Chain Monte Carlo for fun and profit
+message: >-
+  This is just an example citation file, I don't
+  expect you to actually cite this!
+type: software
+authors:
+  - given-names: Thomas Connor
+    family-names: Hodson
+    email: thomas.c.hodson@gmail.com
+    affiliation: Imperial College London
+    orcid: 'https://orcid.org/0000-0002-4121-4772'
+repository-code: >-
+  https://github.com/ImperialCollegeLondon/ReCoDE_MCMC_for_fun_and_profit
+url: >-
+  https://github.com/ImperialCollegeLondon/ReCoDE_MCMC_for_fun_and_profit
+abstract: >-
+  An exemplar project designed to showcase best
+  practices in developing scientific software. Part
+  of the ReCode Project at Imperial College London.
+license: MIT
