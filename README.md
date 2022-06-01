@@ -16,24 +16,24 @@
 </a>
 </p>
 
-This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCode Project at Imperial College London. 
+This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London. 
 
 **You do not need to know or care about Markov Chain Monte Carlo for this to be useful to you.**
 
-Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific softare projects. Maybe you are a PhD student just starting or a researcher just about to embark on a larger scale softare project there should be something intersting here for you.
+Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
 
 ## Table of contents
 1. [A short introduction][intro] 
 1. [Organising code and python packaging][packaging]
 1. [Testing your code][testing]
-1. Python development environnments: Pip, Conda, setup.py and all that. 
+1. Python packages and environments: Pip, Conda, setup.py and all that. 
 1. Planning out a larger software project
 1. Using Jupyter Notebooks during development
 1. Documentation
-1. Software Reproducability
+1. Reproducibility of software outputs
 1. Citing software in a publication: CITATION.cff
 
-## How to use this repo
+## How to use this repository
 
 Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./learning`
 
@@ -41,7 +41,7 @@ When you're ready to dive in you have three options:
 ### 1. Launch them in Binder (easiest but a bit slow)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/TomHodson/ReCoDE_MCMCFF/HEAD?labpath=learning%2F01%20Introduction.ipynb)
 
-### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python installed)
+### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
 
 ```
 git clone 
@@ -50,13 +50,13 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-### 3. View them non-interactively with the links in the table of contents
+### 3. View them non-interactively in GitHub via the links in the table of contents
 
 
 ## The map
 ``` bash
 .
-├── CITATION.cff #This file describes how to cite the work contained in this repository.
+├── CITATION.cff # This file describes how to cite the work contained in this repository.
 ├── LICENSE # Outlines what legal rights you have to use this software.
 ├── README.md # You are here!
 ├── code 
