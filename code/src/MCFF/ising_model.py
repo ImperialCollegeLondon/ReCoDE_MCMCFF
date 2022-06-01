@@ -5,6 +5,7 @@ States are represented by NxM numpy arrays with values +/-1. These functions are
 """
 
 import numpy as np
+from numba import jit
 
 def all_up_state(N):
     "The NxN all up state of the Ising model."
@@ -14,7 +15,7 @@ def all_down_state(N):
     "The NxN all down state of the Ising model."
     return -np.ones([N, N])
 
-def random_state(N, magnetisation = 0.5, rng = np.random.default_rng())
+def random_state(N, magnetisation = 0.5, rng = np.random.default_rng()):
     r"""Return the a random NxN state of the Ising model.
 
     Parameters
