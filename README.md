@@ -16,17 +16,17 @@
 </a>
 </p>
 
-This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London. 
+This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London.
 
 **You do not need to know or care about Markov Chain Monte Carlo for this to be useful to you.**
 
 Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
 
 ## Table of contents
-1. [A short introduction][intro] 
+1. [A short introduction][intro]
 1. [Organising code and python packaging][packaging]
 1. [Testing your code][testing]
-1. Planning the project, MVPs, Premature Optimisation, 
+1. Planning the project, MVPs, Premature Optimisation,
 1. Planning out a larger software project
 1. Using Jupyter Notebooks during development
 1. Documentation
@@ -45,8 +45,8 @@ When you're ready to dive in you have three options:
 ### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
 
 ```
-git clone 
-cd 
+git clone
+cd
 pip install -r requirements.txt
 jupyter lab
 ```
@@ -60,7 +60,7 @@ jupyter lab
 ├── CITATION.cff # This file describes how to cite the work contained in this repository.
 ├── LICENSE # Outlines what legal rights you have to use this software.
 ├── README.md # You are here!
-├── code 
+├── code
 │   ├── README.md # Human readable information about the little python package in here
 │   ├── pyproject.toml # Machine readable information about that same package
 │   ├── setup.cfg # Tells Pip how to install this package
@@ -71,7 +71,7 @@ jupyter lab
 ```
 
 ## External Resources
-- [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here. 
+- [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here.
 - [Intermediate Research Software Development in Python](https://carpentries-incubator.github.io/python-intermediate-development/index.html)
 
 
