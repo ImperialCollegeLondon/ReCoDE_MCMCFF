@@ -9,6 +9,6 @@
     "patch.edgecolor": "#eeeeee",
     "axes.titlesize": "x-large",
     "svg.fonttype": "path",
-    "figure.dpi": 100,
+    "figure.dpi": 110,
     "figure.figsize": [5,5]
 }
