@@ -26,12 +26,13 @@ Rather this project is primarily designed to showcase the tools and practices av
 1. [A short introduction][intro] 
 1. [Organising code and python packaging][packaging]
 1. [Testing your code][testing]
-1. Python packages and environments: Pip, Conda, setup.py and all that. 
+1. Planning the project, MVPs, Premature Optimisation, 
 1. Planning out a larger software project
 1. Using Jupyter Notebooks during development
 1. Documentation
 1. Reproducibility of software outputs
 1. Citing software in a publication: CITATION.cff
+1. Managing an open source project, issues, milestones
 
 ## How to use this repository
 
