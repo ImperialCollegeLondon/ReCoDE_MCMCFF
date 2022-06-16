@@ -18,7 +18,7 @@ states = [all_up, all_down, random, custom]
 
 def E_prediction_all_the_same(L):
     "The exact energy in for the case where all spins are up or down"
-    return -(4 * (L - 2) ** 2 + 12 * (L - 2) + 8) / L**2
+    return -(4 * (L - 2) ** 2 + 12 * (L - 2) + 8)
 
 
 def test_exact_energies():

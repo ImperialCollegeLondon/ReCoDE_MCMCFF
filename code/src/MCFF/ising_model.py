@@ -75,7 +75,7 @@ def energy(state):
             if 0 <= (j + 1) < M:
                 E -= state[i, j] * state[i, j + 1]
 
-    return 2 * E / (N * M)
+    return 2 * E
 
 
 def energy_numpy(state):
@@ -93,7 +93,7 @@ def energy_numpy(state):
         The interaction energy per site.
     """
     E = -np.sum(state[:-1, :] * state[1:, :]) - np.sum(state[:, :-1] * state[:, 1:])
-    return 2 * E / np.product(state.shape)
+    return 2 * E
 
 
 @jit(nopython=True, nogil=True)
@@ -108,4 +108,4 @@ def energy_difference(state, site):
             0 <= (j + dj) < M
         ):  # ignore neighbours not in the NxN grid
             h += state[i + di, j + dj]
-    return 4 * state[i, j] * h / (N * M)
+    return 4 * state[i, j] * h
