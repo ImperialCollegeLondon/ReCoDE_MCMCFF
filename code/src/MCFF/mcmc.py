@@ -67,7 +67,7 @@ def mcmc_generator(
     energy_difference : function(state, site), default = ising_model.energy_difference
         A function that gives the energy change from flippings `site = (i, j)`of `state`.
 
-    Returns
+    Yields
     -------
     np.array
         The final state.
