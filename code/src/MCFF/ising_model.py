@@ -6,6 +6,15 @@ States are represented by NxM numpy arrays with values +/-1. These functions are
 
 import numpy as np
 from numba import jit
+from matplotlib import pyplot as plt
+
+
+def show_state(state, ax=None):
+    "Plot an Ising state to axis or make a new figure to plot to"
+    if ax is None:
+        f, ax = plt.subplots()
+    ax.matshow(state, cmap="Greys", vmin=-1, vmax=1)
+    ax.set(xticks=[], yticks=[])
 
 
 def all_up_state(N):
@@ -85,3 +94,18 @@ def energy_numpy(state):
     """
     E = -np.sum(state[:-1, :] * state[1:, :]) - np.sum(state[:, :-1] * state[:, 1:])
     return 2 * E / np.product(state.shape)
+
+
+@jit(nopython=True, nogil=True)
+def energy_difference(state, site):
+    "The change in energy if we flipped site of state"
+    # loop over the four neighbours of the site, skipping if the site is near an edge
+    N, M = state.shape
+    i, j = site
+    h = 0
+    for di, dj in [[-1, 0], [1, 0], [0, -1], [0, 1]]:  # loop over N,E,S,W neighbours
+        if (0 <= (i + di) < N) and (
+            0 <= (j + dj) < M
+        ):  # ignore neighbours not in the NxN grid
+            h += state[i + di, j + dj]
+    return 4 * state[i, j] * h / (N * M)

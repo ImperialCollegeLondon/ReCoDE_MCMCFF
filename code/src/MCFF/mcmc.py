@@ -2,6 +2,9 @@
 
 
 """
+import numpy as np
+from numba import jit
+from .ising_model import energy, energy_difference
 
 
 def mcmc(initial_state, steps, T, rng=np.random.default_rng()):
@@ -27,7 +30,7 @@ def mcmc(initial_state, steps, T, rng=np.random.default_rng()):
     assert N == M
 
     current_state = initial_state.copy()
-    E = N**2 * energy(state)
+    E = N**2 * energy(initial_state)
     for i in range(steps):
         i, j = rng.integers(N, size=2)
 
@@ -40,3 +43,25 @@ def mcmc(initial_state, steps, T, rng=np.random.default_rng()):
             E = new_E
 
     return current_state
+
+
+@jit(nopython=True, nogil=True)
+def mcmc_generator(
+    initial_state, steps, T, stepsize=1000, energy_difference=energy_difference
+):
+    N, M = initial_state.shape
+    assert N == M
+
+    current_state = initial_state.copy()
+    for _ in range(steps):
+        for _ in range(stepsize):
+            i, j = np.random.randint(N), np.random.randint(N)
+
+            # calculate the energy change if we were to flip this pixel but don't actually do it
+            change_in_E = N**2 * energy_difference(current_state, (i, j))
+
+            if change_in_E < 0 or np.exp(-change_in_E / T) > np.random.random():
+                current_state[i, j] *= -1  # accept the change!
+
+        yield current_state.copy()
+    return
