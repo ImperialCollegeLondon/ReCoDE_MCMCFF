@@ -60,13 +60,12 @@ jupyter lab
 ├── CITATION.cff # This file describes how to cite the work contained in this repository.
 ├── LICENSE # Outlines what legal rights you have to use this software.
 ├── README.md # You are here!
-├── code
-│   ├── README.md # Human readable information about the little python package in here
-│   ├── pyproject.toml # Machine readable information about that same package
-│   ├── setup.cfg # Tells Pip how to install this package
-│   ├── src
-│   │   └── MCFF # The actual code lives in here!
-│   └── tests # automated tests for the code
+├── README.md # Human readable information about the little python package in here
+├── pyproject.toml # Machine readable information about that same package
+├── setup.cfg # Tells Pip how to install this package
+├── src
+|   └── MCFF # The actual code lives in here!
+└─ tests # automated tests for the code
 └── learning # Supporting documentation
 ```
 

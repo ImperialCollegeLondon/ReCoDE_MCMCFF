@@ -10,7 +10,9 @@ all_up = np.ones([100, 100])
 all_down = -np.ones([100, 100])
 random = np.random.choice([-1, 1], size=(100, 100))
 custom = (
-    1 - 2 * imread(Path(__file__).parents[2] / "learning/data/test_state.png")[:, :, 0]
+    1
+    - 2
+    * imread(Path(__file__).parents[1] / "docs/learning/data/test_state.png")[:, :, 0]
 )  # load a 100x100 png, take the red channel, remap 0,1 to -1,1
 
 states = [all_up, all_down, random, custom]
