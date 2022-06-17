@@ -23,14 +23,15 @@ This is an exemplar project designed to showcase best practices in developing sc
 Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
 
 ## Table of contents
-1. [A short introduction][intro]
-1. [Organising code and python packaging][packaging]
-1. [Testing your code][testing]
-1. Planning the project, MVPs, Premature Optimisation,
-1. Planning out a larger software project
-1. Using Jupyter Notebooks during development
-1. Documentation
-1. Reproducibility of software outputs
+1. [Introduction](docs/learning/01%20Introduction.ipynb)
+1. [Packaging It Up](docs/learning/02%20Packaging%20It%20Up.ipynb)
+1. [Writing a Markov Chain Monte Carlo Sampler](docs/learning/03%20Writing%20a%20Markov%20Chain%20Monte%20Carlo%20Sampler.ipynb)
+1. [Testing](docs/learning/04%20Testing.ipynb)
+1. [Adding Functionality](docs/learning/05%20Adding%20Functionality.ipynb)
+1. [Speeding It Up](docs/learning/06%20Speeding%20It%20Up.ipynb)
+1. [Producing Research Outputs](docs/learning/07%20Producing%20Research%20Outputs.ipynb)
+1. [Doing Reproducible Science](docs/learning/08%20Doing%20Reproducible%20Science.ipynb)
+1. [Adding Documentation](docs/learning/09%20Adding%20Documentation.ipynb)
 1. Citing software in a publication: CITATION.cff
 1. Managing an open source project, issues, milestones
 
@@ -55,18 +56,24 @@ jupyter lab
 
 
 ## The map
-``` bash
+```bash
 .
 ├── CITATION.cff # This file describes how to cite the work contained in this repository.
 ├── LICENSE # Outlines what legal rights you have to use this software.
 ├── README.md # You are here!
-├── README.md # Human readable information about the little python package in here
-├── pyproject.toml # Machine readable information about that same package
-├── setup.cfg # Tells Pip how to install this package
+├── docs
+│   ├── ... #Files to do with making the documentation
+│   └── learning
+│       └── #The Jupyer notebooks that form the main body of this project
+│
+├── pyproject.toml # Machine readable information about the MCFF package
+├── readthedocs.yaml # Tells readthedocs.com how to build the documentation
+├── requirements.txt # What packages MCFF requires
+├── setup.cfg # Machine readable information about the MCFF package
 ├── src
-|   └── MCFF # The actual code lives in here!
-└─ tests # automated tests for the code
-└── learning # Supporting documentation
+│   └── MCFF # The actual code!
+│
+└── tests # automated tests for the code
 ```
 
 ## External Resources
