@@ -1,0 +1,19 @@
+name: recode
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pytest=7.1
+  - pytest-cov=3.0
+  - ipykernel=6.9
+  - numpy=1.21
+  - scipy=1.7
+  - matplotlib=3.5
+  - numba=0.55
+  - pre-commit
+  - pip=21.2
+  - pip:
+      - --editable . #install MCFF from the local repository using pip and do it in editable mode

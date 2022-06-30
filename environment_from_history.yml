@@ -1,0 +1,14 @@
+name: recode
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.9
+  - pytest
+  - pytest-cov
+  - ipykernel
+  - numpy
+  - scipy
+  - matplotlib
+  - numba
