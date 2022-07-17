@@ -4,10 +4,10 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/Imperial-CMTH/koala/actions/workflows/ci.yml/badge.svg"/>
-<a href="https://zenodo.org/badge/latestdoi/422218038">
+<!-- <img src="https://github.com/Imperial-CMTH/koala/actions/workflows/ci.yml/badge.svg"/> -->
+<!-- <a href="https://zenodo.org/badge/latestdoi/422218038">
     <img src="https://zenodo.org/badge/422218038.svg"/>
-</a>
+</a> -->
 <a href="https://wfxr.mit-license.org/2017">
         <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"/>
 </a>
@@ -32,16 +32,14 @@ Rather this project is primarily designed to showcase the tools and practices av
 1. [Producing Research Outputs](docs/learning/07%20Producing%20Research%20Outputs.ipynb)
 1. [Doing Reproducible Science](docs/learning/08%20Doing%20Reproducible%20Science.ipynb)
 1. [Adding Documentation](docs/learning/09%20Adding%20Documentation.ipynb)
-1. Citing software in a publication: CITATION.cff
-1. Managing an open source project, issues, milestones
 
 ## How to use this repository
 
-Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./learning`
+Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./docs/learning`
 
 When you're ready to dive in you have three options:
 ### 1. Launch them in Binder (easiest but a bit slow)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/TomHodson/ReCoDE_MCMCFF/HEAD?labpath=learning%2F01%20Introduction.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImperialCollegeLondon/ReCoDE_MCMCFF/HEAD?urlpath=lab%2Ftree%2Fdocs%2Flearning%2F01%20Introduction.ipynb)
 
 ### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
 
