@@ -23,6 +23,7 @@ This is an exemplar project designed to showcase best practices in developing sc
 Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
 
 ## Table of contents
+
 1. [Introduction](docs/learning/01%20Introduction.ipynb)
 1. [Packaging It Up](docs/learning/02%20Packaging%20It%20Up.ipynb)
 1. [Writing a Markov Chain Monte Carlo Sampler](docs/learning/03%20Writing%20a%20Markov%20Chain%20Monte%20Carlo%20Sampler.ipynb)
@@ -38,7 +39,9 @@ Rather this project is primarily designed to showcase the tools and practices av
 Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./docs/learning`
 
 When you're ready to dive in you have three options:
+
 ### 1. Launch them in Binder (easiest but a bit slow)
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImperialCollegeLondon/ReCoDE_MCMCFF/HEAD?urlpath=lab%2Ftree%2Fdocs%2Flearning%2F01%20Introduction.ipynb)
 
 ### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
@@ -52,8 +55,8 @@ jupyter lab
 
 ### 3. View them non-interactively in GitHub via the links in the table of contents
 
-
 ## The map
+
 ```bash
 .
 ├── CITATION.cff # This file describes how to cite the work contained in this repository.
@@ -75,12 +78,11 @@ jupyter lab
 ```
 
 ## External Resources
+
 - [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here.
 - [Intermediate Research Software Development in Python](https://carpentries-incubator.github.io/python-intermediate-development/index.html)
 
-
-
-[TDD]: learning/01%20Introduction.ipynb
+[tdd]: learning/01%20Introduction.ipynb
 [intro]: learning/01%20Introduction.ipynb
 [packaging]: learning/02%20Packaging%20it%20up.ipynb
 [testing]: learning/02%20Testing.ipynb
