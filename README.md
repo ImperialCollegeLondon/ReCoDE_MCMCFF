@@ -36,7 +36,7 @@ Rather this project is primarily designed to showcase the tools and practices av
 
 ## How to use this repository
 
-Take a look at a the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `./code` and the documentation in `./docs/learning`
+Take a look at the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `src` and the documentation in `docs/learning` in the form of Jupyter notebooks.
 
 When you're ready to dive in you have three options:
 
@@ -44,12 +44,12 @@ When you're ready to dive in you have three options:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImperialCollegeLondon/ReCoDE_MCMCFF/HEAD?urlpath=lab%2Ftree%2Fdocs%2Flearning%2F01%20Introduction.ipynb)
 
-### 2. Clone the repo and run the jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
+### 2. Clone the repo and run the Jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
 
-```
-git clone
-cd
-pip install -r requirements.txt
+```bash
+git clone https://github.com/ImperialCollegeLondon/ReCoDE_MCMCFF mcmc
+cd mcmc
+pip install .[dev]
 jupyter lab
 ```
 
@@ -65,7 +65,7 @@ jupyter lab
 ├── docs
 │   ├── ... #Files to do with making the documentation
 │   └── learning
-│       └── #The Jupyer notebooks that form the main body of this project
+│       └── #The Jupyter notebooks that form the main body of this project
 │
 ├── pyproject.toml # Machine readable information about the MCFF package
 ├── readthedocs.yaml # Tells readthedocs.com how to build the documentation

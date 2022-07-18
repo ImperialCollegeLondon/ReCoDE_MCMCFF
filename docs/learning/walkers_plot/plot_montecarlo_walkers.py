@@ -18,7 +18,7 @@ import pickle
 # This loads some custom styles for matplotlib
 import json, matplotlib
 
-with open("../assets/matplotlibrc.json") as f:
+with open("../../_static/matplotlibrc.json") as f:
     matplotlib.rcParams.update(json.load(f))
 
 from itertools import count
