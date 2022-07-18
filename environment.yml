@@ -6,15 +6,28 @@ channels:
 
 dependencies:
   - python=3.9
-  - pytest=7.1
-  - pytest-cov=3.0
-  - ipykernel=6.9
+
+  # Core packages
   - numpy=1.21
   - scipy=1.7
   - matplotlib=3.5
   - numba=0.55
-  - pre-commit=2.20
-  - hypothesis=6.29
+  - ipykernel=6.9   # Allows this conda environment to show up automatically in Jupyter Lab
+  - watermark=2.3    # Generates a summary of package version for use inside Jupyter Notebooks
+
+  # Testing
+  - pytest=7.1      # Testing
+  - pytest-cov=3.0  # For Coverage testing
+  - hypothesis=6.29  # Property based testing
+
+  # Development
+  - pre-commit=2.20  # For running black and other tools before commits
+
+  # Documentation
+  - sphinx=5.0       # For building the documentation
+  - myst-nb=0.16     # Allows sphinx to include Jupyter Notebooks
+
+  # Installing MCFF itself
   - pip=21.2
   - pip:
       - --editable . #install MCFF from the local repository using pip and do it in editable mode
