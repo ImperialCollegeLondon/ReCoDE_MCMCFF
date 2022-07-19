@@ -16,35 +16,64 @@
 </a>
 </p>
 
+## Description
+
 This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London.
 
 **You do not need to know or care about Markov Chain Monte Carlo for this to be useful to you.**
 
 Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
 
-## Table of contents
+## Learning Outcomes
 
-1. [Introduction](docs/learning/01%20Introduction.ipynb)
-1. [Packaging It Up](docs/learning/02%20Packaging%20It%20Up.ipynb)
-1. [Writing a Markov Chain Monte Carlo Sampler](docs/learning/03%20Writing%20a%20Markov%20Chain%20Monte%20Carlo%20Sampler.ipynb)
-1. [Testing](docs/learning/04%20Testing.ipynb)
-1. [Adding Functionality](docs/learning/05%20Adding%20Functionality.ipynb)
-1. [Speeding It Up](docs/learning/06%20Speeding%20It%20Up.ipynb)
-1. [Producing Research Outputs](docs/learning/07%20Producing%20Research%20Outputs.ipynb)
-1. [Doing Reproducible Science](docs/learning/08%20Doing%20Reproducible%20Science.ipynb)
-1. [Adding Documentation](docs/learning/09%20Adding%20Documentation.ipynb)
+- Creating virtual environments using Anaconda
+- Plotting data using Matplotlib
+- Improving code performance with `numba` and Just-in-time compilation
+- Packaging Python projects into modules
+- Writing a simple Monte Carlo simulation using `numba` and `numpy`
+- Using Test Driven Development (TDD) to test your code
+- Creating unittests with `pytest`
+- Calculating the `coverage` of your codebase
+- Visualising coarse and detailed views of the `coverage` in your codebase
+- Creating property-based tests with `hypothesis`
+- Creating regression tests
+- Using autoformatters like `black` and other development tools
+- Improving performance using `generators` and `yield`
+- Making a reproducible Python environment using Anaconda
+- Documenting your code using `sphinx`
+- Writing docstrings using a standardised format
 
-## How to use this repository
+## Requirements
+
+### Academic
+
+Entry level researcher with basic knowledge of Python.
+
+**Complementary Resources to the exemplar:**
+
+- [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here.
+- [Intermediate Research Software Development in Python](https://carpentries-incubator.github.io/python-intermediate-development/index.html)
+
+### System
+
+| Language                                                   | Version |
+| ---------------------------------------------------------- | ------- |
+| [Python](https://www.python.org/downloads/)                | >= 3.7  |
+| [Anaconda](https://www.anaconda.com/products/distribution) | >= 4.1  |
+
+## Getting Started
 
 Take a look at the table of contents below and see if there are any topics that might be useful to you. The actual code lives in `src` and the documentation in `docs/learning` in the form of Jupyter notebooks.
 
-When you're ready to dive in you have three options:
+When you're ready to dive in you have 4 options:
 
-### 1. Launch them in Binder (easiest but a bit slow)
+### 1. Launch them in Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImperialCollegeLondon/ReCoDE_MCMCFF/HEAD?urlpath=lab%2Ftree%2Fdocs%2Flearning%2F01%20Introduction.ipynb)
 
-### 2. Clone the repo and run the Jupyter notebooks locally. (Faster but requires you have python/jupyter installed)
+_NOTE: Performance might be a bit slow_.
+
+### 2. Clone the repo and run the Jupyter notebooks locally
 
 ```bash
 git clone https://github.com/ImperialCollegeLondon/ReCoDE_MCMCFF mcmc
@@ -53,9 +82,18 @@ pip install .[dev]
 jupyter lab
 ```
 
-### 3. View them non-interactively in GitHub via the links in the table of contents
+_NOTE: Better performance but requires you have python and Jupyter installed_.
 
-## The map
+### 3. View the Jupyter notebooks non-interactively via the online documentation
+
+You can read all the Jupyter notebooks online and non-interactively in the official **[Documentation](https://recode-mcmcff.readthedocs.io/)**.
+
+### 4. View the Jupyter notebooks non-interactively on GitHub
+
+Click [here](https://github.com/ImperialCollegeLondon/ReCoDE_MCMCFF/tree/main/docs/learning)
+to view the individual Jupyter notebooks.
+
+## Project Structure
 
 ```bash
 .
@@ -76,13 +114,3 @@ jupyter lab
 │
 └── tests # automated tests for the code
 ```
-
-## External Resources
-
-- [The Turing Way](https://the-turing-way.netlify.app/) has tons of great resources on the topics discussed here.
-- [Intermediate Research Software Development in Python](https://carpentries-incubator.github.io/python-intermediate-development/index.html)
-
-[tdd]: learning/01%20Introduction.ipynb
-[intro]: learning/01%20Introduction.ipynb
-[packaging]: learning/02%20Packaging%20it%20up.ipynb
-[testing]: learning/02%20Testing.ipynb
