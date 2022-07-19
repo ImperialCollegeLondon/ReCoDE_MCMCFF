@@ -13,9 +13,8 @@ There is a `Jupyter notebook <https://github.com/TomHodson/ReCoDE_MCMCFF>`_ deta
    :caption: Table of Contents:
 
    quickstart
-   api_docs
    learning/*
-
+   api_docs
 
 
 Indices and tables
