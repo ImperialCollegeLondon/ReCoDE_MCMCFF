@@ -67,7 +67,7 @@ Take a look at the table of contents below and see if there are any topics that 
 
 When you're ready to dive in you have 4 options:
 
-### 1. Launch them in Binder
+### 1. Launch the notebooks in Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImperialCollegeLondon/ReCoDE_MCMCFF/HEAD?urlpath=lab%2Ftree%2Fdocs%2Flearning%2F01%20Introduction.ipynb)
 
@@ -82,7 +82,7 @@ pip install .[dev]
 jupyter lab
 ```
 
-_NOTE: Better performance but requires you have python and Jupyter installed_.
+_NOTE: Better performance but requires you have Python and Jupyter installed_.
 
 ### 3. View the Jupyter notebooks non-interactively via the online documentation
 
