@@ -56,7 +56,7 @@ Entry level researcher with basic knowledge of Python.
 
 ### System
 
-| Language                                                   | Version |
+| Program                                                    | Version |
 | ---------------------------------------------------------- | ------- |
 | [Python](https://www.python.org/downloads/)                | >= 3.7  |
 | [Anaconda](https://www.anaconda.com/products/distribution) | >= 4.1  |
