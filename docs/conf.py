@@ -34,8 +34,21 @@ release = "1.0"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
+    "sphinx.ext.mathjax",
     "myst_nb",
 ]
+
+# Setup the myst_nb extension for LaTeX equations rendering
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "html_image",
+]
+myst_dmath_allow_labels = True
+myst_dmath_double_inline = True
+myst_update_mathjax = True
 
 # Tell myst_nb not to execute the notebooks
 nb_execution_mode = "off"
