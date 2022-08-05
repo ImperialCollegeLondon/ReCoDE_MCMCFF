@@ -61,6 +61,9 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".pytest_cache"]
 
+# Preserve default values, don't expand them - prevents replacing default
+# values with constants or object representations including a memory address
+autodoc_preserve_defaults = True
 
 # -- Options for HTML output -------------------------------------------------
 
